@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ibtida - Calculator</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center h-screen bg-cover bg-center" style="background-image: url('cal1.jpg');">
+    <div class="flex items-center justify-center w-[400px] rounded-2xl bg-black/50 shadow-[0_0_10px_rgba(114,116,116,0.8),0_0_20px_rgba(90,93,93,0.5)] p-6">
+        <div class="w-full p-5 rounded-xl bg-black shadow-lg">
+            <input type="text" id="history" class="w-full h-12 text-right text-white bg-white/10 border-2 border-teal-500 rounded-md outline-none pointer-events-none px-3 text-lg mb-2" disabled>
+            <input type="text" id="display" class="w-full h-12 text-right text-white bg-white/10 border-2 border-teal-500 rounded-md outline-none pointer-events-none px-3 text-2xl mb-3" disabled>
+            <div class="grid grid-cols-4 gap-2">
+                <button class="py-2 rounded-md bg-gray-400 text-black font-bold" data-value="AC">AC</button>
+                <button class="py-2 rounded-md bg-gray-400 text-black font-bold" data-value="DEL">DEL</button>
+                <button class="py-2 rounded-md bg-gray-400 text-black font-bold" data-value="MODE">MODE</button>
+                <button class="py-2 rounded-md bg-cyan-500 text-black font-bold" data-value="/">÷</button>
+                <button class="py-2 rounded-md bg-white/20 text-white font-bold" data-value="0">0</button>
+                <button class="py-2 rounded-md bg-white/20 text-white font-bold" data-value="00">00</button>
+                <button class="py-2 rounded-md bg-white/20 text-white font-bold" data-value=".">.</button>
+                <button class="py-2 rounded-md bg-cyan-500 text-black font-bold" data-value="*">x</button>
+                <button class="py-2 rounded-md bg-white/20 text-white font-bold" data-value="1">1</button>
+                <button class="py-2 rounded-md bg-white/20 text-white font-bold" data-value="2">2</button>
+                <button class="py-2 rounded-md bg-white/20 text-white font-bold" data-value="3">3</button>
+                <button class="py-2 rounded-md bg-cyan-500 text-black font-bold" data-value="-">-</button>
+                <button class="py-2 rounded-md bg-white/20 text-white font-bold" data-value="4">4</button>
+                <button class="py-2 rounded-md bg-white/20 text-white font-bold" data-value="5">5</button>
+                <button class="py-2 rounded-md bg-white/20 text-white font-bold" data-value="6">6</button>
+                <button class="py-2 rounded-md bg-cyan-500 text-black font-bold" data-value="+">+</button>
+                <button class="py-2 rounded-md bg-white/20 text-white font-bold" data-value="">7</button>
+                <button class="py-2 rounded-md bg-white/20 text-white font-bold" data-value="8">8</button>
+                <button class="py-2 rounded-md bg-white/20 text-white font-bold" data-value="9">9</button>
+                <button class="py-2 rounded-md bg-gray-400 text-black font-bold" data-value="=">Result</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
